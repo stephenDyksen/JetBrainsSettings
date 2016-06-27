@@ -67,6 +67,7 @@
     <local-interpreter path="/usr/local/bin/node" />
     <local-interpreter path="$USER_HOME$/.nvm/versions/node/v4.2.2/bin/node">
       <version-cache version="4.2.2" last-modified="1446580476000" />
+      <npm-package value="$USER_HOME$/.nvm/versions/node/v4.2.2/lib/node_modules/npm" />
     </local-interpreter>
   </component>
 </application>
