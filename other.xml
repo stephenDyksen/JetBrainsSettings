@@ -70,4 +70,7 @@
       <npm-package value="$USER_HOME$/.nvm/versions/node/v4.2.2/lib/node_modules/npm" />
     </local-interpreter>
   </component>
+  <component name="RefactoringSettings">
+    <option name="INTRODUCE_LOCAL_CREATE_FINALS" value="false" />
+  </component>
 </application>
