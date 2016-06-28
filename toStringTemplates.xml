@@ -1,0 +1,21 @@
+<application>
+  <component name="ToStringTemplates">
+    <option name="defaultTempalteName" value="MoreObjects.toStringHelper (Guava 18+)" />
+    <option name="templates">
+      <list>
+        <TemplateResource>
+          <option name="fileName" value="Java 8 Hashcode" />
+          <option name="template" value="public int hashCode() {&#10;#set ( $i = 0 )&#10;return java.util.Objects.hash(&#10;#foreach ( $member in $members )$member.accessor#if ( $i == $members.size() - 1 ));#{else},&#10;#end#set ( $i = $i + 1 )#end&#10;}" />
+        </TemplateResource>
+        <TemplateResource>
+          <option name="fileName" value="Java 8 Equals" />
+          <option name="template" value="public boolean equals(Object o) {&#10;if (this == o) {&#10;return true;&#10;}&#10;if (o == null || getClass() != o.getClass()) {&#10;return false;&#10;}&#10;$classname that = ($classname) o;&#10;#set ( $i = 0 )&#10;return#foreach ( $member in $members )&#10;    #if ( $i &gt; 0 )&#10;    ​&#10;    &amp;&amp;##&#10;    #end java.util.Objects.equals(this.$member.accessor, that.$member.accessor)#set ( $i = $i + 1 )#end;&#10;}" />
+        </TemplateResource>
+        <TemplateResource>
+          <option name="fileName" value="Builder" />
+          <option name="template" value="public static Builder builder() {&#10;return new Builder();&#10;​&#10;​&#10;public static class Builder {&#10;#foreach ($field in $fields)&#10;private $field.typeName $field.name;&#10;#end&#10;​&#10;#foreach ($field in $fields)&#10;public Builder $field.name.toString()($field.typeName $field.name) {&#10;this.$field.name = $field.name;&#10;return this;&#10;}&#10;​&#10;#end&#10;​&#10;public $classname build() {&#10;return new $classname(#set ($i = 0)#foreach ( $field in $fields )$field.accessor#if ( $i == $fields.size() - 1 ));#{else},&#10;#end#set ( $i = $i + 1 )#end&#10;}&#10;}" />
+        </TemplateResource>
+      </list>
+    </option>
+  </component>
+</application>
