@@ -2,8 +2,6 @@
   <component name="FindSettings">
     <option name="customScope" value="File '/Users/Home/Documents/Campspot/campspot/java-api/src/main/java/campspot/dao/ReservationDetailDAO.java'" />
     <option name="defaultScopeName" value="File '/Users/Home/Documents/Campspot/campspot/java-api/src/main/java/campspot/dao/ReservationDetailDAO.java'" />
-    <option name="localRegularExpressions" value="true" />
-    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="File '/Users/Home/Documents/Campspot/campspot/java-api/src/main/java/campspot/dao/ReservationDetailDAO.java'" />
     <recentFileMasks>
       <mask>*.properties</mask>
